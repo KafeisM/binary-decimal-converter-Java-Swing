@@ -59,7 +59,7 @@ public class BinarioVentana extends JFrame {
             }
         });
 
-        jlbBinari.setText("Binari Number");
+        jlbBinari.setText("Binary Number");
         jlbBinari.setFont(font);
         jlbBinari.setBounds(15, 30, 150, 25);
         getContentPane().add(jlbBinari);
