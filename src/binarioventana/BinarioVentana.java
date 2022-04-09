@@ -3,13 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package binarioventana;
-
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -36,7 +32,7 @@ public class BinarioVentana extends JFrame {
 
     public BinarioVentana() {
         setSize(400, 200);
-        setTitle("Conversió decimal-binari");
+        setTitle("Conversor decimal-binary");
         initComponents();
     }
 
@@ -63,12 +59,12 @@ public class BinarioVentana extends JFrame {
             }
         });
 
-        jlbBinari.setText("Nombre Binari");
+        jlbBinari.setText("Binari Number");
         jlbBinari.setFont(font);
         jlbBinari.setBounds(15, 30, 150, 25);
         getContentPane().add(jlbBinari);
 
-        jlbDecimal.setText("Nombre Decimal");
+        jlbDecimal.setText("Decimal Number");
         jlbDecimal.setFont(font);
         jlbDecimal.setBounds(15, 90, 150, 25);
         getContentPane().add(jlbDecimal);
@@ -83,11 +79,11 @@ public class BinarioVentana extends JFrame {
         jtfDecimal.setBounds(150, 90, 150, 25);
         getContentPane().add(jtfDecimal);
 
-        jbtAcceptar.setText("Conversio");
+        jbtAcceptar.setText("Conversion");
         jbtAcceptar.setBounds(150, 130, 120, 25);
         getContentPane().add(jbtAcceptar);
 
-        //Per controlar els esdeveniments KeyEvent a les finestres de text
+        //Control of the events KeyEvent to the text windows
         KeyAdapter kl = new KeyAdapter() {
 
             @Override
